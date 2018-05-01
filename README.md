@@ -1,2 +1,2 @@
-# ios_nginx_homebrew_php-7.0_php-7.1
+# Mac iOS + Nginx + Homebrew + php@7.0 + php@7.1
 How To create local env using Mac iOS + Nginx + Homebrew + php@7.0 + php@7.1
