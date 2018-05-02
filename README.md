@@ -249,5 +249,5 @@ Just follow and answer all the prompts. This will set you up with a user and pas
 
 *This is a point where you can go to /Users/<your username>/Nginx/<magento folder>, clone magento repository, run composer install and setup Magento2 local store*
  
-Further instruction on how to set XDEBUG coming soon.
+Further instruction on how to set PHP Switcher (for easier switch between a versions) and XDEBUG coming soon.
 
