@@ -1,4 +1,4 @@
-# Mac iOS + Nginx + Homebrew + php@7.0 + php@7.1
+# Mac iOS + Nginx + Homebrew + MariaDB + php@7.0 + php@7.1
 How To create local env using Mac iOS + Nginx + Homebrew + php@7.0 + php@7.1
 
 Due to Homebrew/php tap being deprecated at the end of March 2018, and the moving of all PHP formulas to Homebrew/core I was struggling to find a tutorial that will explain how to create local environment with all this changes.
@@ -56,4 +56,37 @@ After installation you will be given path to nginx.conf file:
  $ sudo brew services start nginx
  ```
  
- to be continued
+ Edit **/usr/local/etc/nginx/nginx.conf**, change:
+ ```
+ #user nobody;
+ ```
+ to your username (best one you are using to log to your Mac)
+ ```
+ user <your username> staff;
+ ```
+ On Mac login user is associated to a group **staff** and we are going to keep that. This is important if you are working with a code like Magento2 Commerce Cloud, that needs to have defined file's owner and group.
+ 
+ Further down change:
+ ```
+ Listen 8080
+ ```
+ to 
+ ```
+ Listen 80
+ ```
+ If you are going to use Nginx and Apache on the same machine just follow this tuts to the end. We are going to setup Apache to listen 8080.
+ 
+ After this change:
+ ```
+ location / {
+    root   html;
+    index  index.html index.htm;
+}
+```
+to
+```
+location / {
+    root   /Users/ivagarfitt/Nginx;
+    index  index.html index.htm;
+}
+```
