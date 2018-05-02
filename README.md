@@ -251,3 +251,8 @@ Just follow and answer all the prompts. This will set you up with a user and pas
  
 Further instruction on how to set PHP Switcher (for easier switch between a versions) and XDEBUG coming soon.
 
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
