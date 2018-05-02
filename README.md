@@ -56,4 +56,4 @@ After installation you will be given path to nginx.conf file:
  $ sudo brew services start nginx
  ```
  
- 
+ to be continued
