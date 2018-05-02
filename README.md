@@ -247,3 +247,7 @@ $ /usr/local/bin/mysql_secure_installation
 ```
 Just follow and answer all the prompts. This will set you up with a user and password.
 
+*This is a point where you can go to /Users/<your username>/Nginx/<magento folder>, clone magento repository, run composer install and setup Magento2 local store*
+ 
+Further instruction on how to set XDEBUG coming soon.
+
