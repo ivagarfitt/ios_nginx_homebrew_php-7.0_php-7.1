@@ -86,7 +86,7 @@ After installation you will be given path to nginx.conf file:
 to
 ```
 location / {
-    root   /Users/ivagarfitt/Nginx;
+    root   /Users/<username>/Nginx;
     index  index.html index.htm;
 }
 ```
