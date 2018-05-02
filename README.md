@@ -25,5 +25,35 @@ Just to be sure run:
 ```
 $ brew doctor
 ```
-It will instruct you how to fix potential problems. 
-**Note** **
+It will instruct you how to fix potential problems.
+
+**Note** *After you run this you will see message like this:*
+```
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry or file an issue; just ignore this. Thanks!
+```
+And if after that you only see few link issues and not some major issues, just wait to finish full installation and if all is running fine no need to do anything.
+
+
+## Install NGINX
+
+```
+$ brew install nginx
+```
+After installation you will be given path to nginx.conf file:
+```
+ /usr/local/etc/nginx/nginx.conf
+ ```
+ To start, restart and stop nginx you will use:
+ ```
+ $ brew services start nginx
+ $ brew services restart nginx
+ $ brew services stop nginx
+ ```
+ In case you need to be sure that it started,restarted or stopped use sudo:
+ ```
+ $ sudo brew services start nginx
+ ```
+ 
+ 
